@@ -1,0 +1,133 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Dan Long | Voice Artist"
+theme = "hugo-stellar-theme"
+
+googleAnalytics = "" #put your google-analytics ID here
+
+[params]
+  [params.header]
+    title = "Dan Long"
+    description = 'is a Voice Actor based out of San Francisco'
+    image = "images/logo.svg"
+
+  [[params.navigation]]
+    name = "About Dan"
+    href = "#intro"
+
+  [[params.navigation]]
+    name = "Demo Audio"
+    href = "#first"
+
+#  [[params.navigation]]
+#    name = "Contact"
+#    href = "#second"
+
+  [[params.navigation]]
+    name = "Let's Talk"
+    href = "#cta"
+
+  [params.intro]
+    title = "About Dan"
+    description = "Lorem ipsum dolor sit amet. consectetur adipiscing elit. Fusce quis ipsum tristique. ullamcorper sapien a. placerat odio. Vestibulum eget sem in velit dictum accumsan. Sed nulla elit. rhoncus vitae elit non. rhoncus ultrices tortor. Fusce volutpat augue eget nunc iaculis lobortis. Ut bibendum tortor eget quam pharetra vestibulum. Etiam gravida sapien ut orci auctor tempor. <br><br> Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse commodo dolor nec leo tincidunt pharetra. In consectetur libero eget dolor elementum aliquet. Maecenas eu commodo nisl. Phasellus maximus ultrices odio sed maximus. Morbi ultrices vulputate condimentum. Donec ligula tortor, eleifend quis euismod vitae, dignissim vel augue. Vivamus auctor leo vitae nisl vestibulum facilisis. Nam lobortis sollicitudin erat ut iaculis. Duis accumsan, nisl quis scelerisque dapibus, nisl est rhoncus mauris, sit amet vestibulum lectus quam non dui. Sed magna sapien, ornare non pulvinar a, venenatis vel felis. Etiam commodo efficitur ultrices. <br><br> Vitae aliquam lacus. Sed id magna at mi semper varius at eget arcu. Praesent quam nisi, ultricies vitae placerat vel, faucibus tempus odio. Nam feugiat tincidunt elit. Donec porttitor odio et turpis tempus ultricies."
+    image = "images/avatar.jpg"
+  
+  #[[params.intro.action]]
+#      buttontext = "Learn More"
+#      href = "generic.html"
+
+
+  [[params.section]]
+    id = "first"
+    title = "Demo Audio"
+    description = ""
+    
+    # the picture is storead at static/images/
+    [params.section.features]
+      enable = true
+      [[params.section.feature]]
+        title = "Commercials"
+        audio = "mushroom.mp3"
+        #description = "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+        icon = "fa-bullhorn"
+
+      [[params.section.feature]]
+        title = "Animation"
+        audio = "animation.mp3"
+        #description = "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+        icon = "fa-paint-brush"
+
+      [[params.section.feature]]
+        title = "Video Games"
+        audio = "videogames.mp3"
+        #description = "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+        icon = "fa-gamepad"
+        
+    [params.section.footer]
+      enable = true
+#      [[params.section.footer.action]]
+#        buttontext = "Learn More"
+#        buttonUrl = "generic.html"
+
+
+  [[params.section]]
+    id = "cta"
+    title = "Contact Me"
+    description = "Thank you for your interest! I am currently revamping how I do business, so the contact form is disabled for the time being"
+    [params.section.footer]
+      enable = false
+      [[params.section.footer.action]]
+        buttontext = "Get Started"
+        buttonUrl = "generic.html"
+        customClass = "special"
+      [[params.section.footer.action]]
+        buttontext = "Learn More"
+        buttonUrl = "generic.html"
+
+  [params.footer]
+    enable = true
+    title = "As Bugs Bunny would say:"
+    description = "That's All Folks!"
+    second_title = "Contact Information"
+    address = "San Francisco, CA 94103 &bull; USA"
+#    phone = "(000) 000-0000 x 0000"
+    email = "dan@voiceart.ist"
+
+#    [[params.footer.action]]
+#      href = "generic.html"
+#      buttontext = "Learn More"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "https://twitter.com/danlongvo"
+
+#      [[params.footer.social]]
+#        title = "Facebook"
+#        icon = "fa-facebook"
+#        link = "#"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/fumitol/"
+
+#      [[params.footer.social]]
+#        title = "Dribbble"
+#        icon = "fa-dribbble"
+#        link = "#"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "#"
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
+      text = "© Dan Long | I ❤️ you"

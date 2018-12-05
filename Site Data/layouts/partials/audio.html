@@ -1,0 +1,18 @@
+{{ "<!-- Audio Portfolio -->" | safeHTML }}
+<section>
+    {{ with .Site.Params.audio.title }}
+        <h1>{{ . | markdownify }}</h1>
+    {{ end }}
+	<div class="row">
+		{{ range .Site.Params.audio.gallery }}
+		<audio
+       controls
+       src="{{ $.Site.BaseURL }}audio/{{ .audio }}">
+Your browser does not support the <code>audio</code> element.
+</audio>
+			<h3>{{ .title | markdownify }}</h3>
+			<p>{{ .description | markdownify }}</p>
+		</article>
+		{{ end }}
+	</div>
+</section>
