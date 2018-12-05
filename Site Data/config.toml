@@ -1,8 +1,9 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://voiceart.ist/"
 languageCode = "en-us"
 title = "Dan Long | Voice Artist"
-theme = "hugo-stellar-theme"
+theme = "stellar"
+publishDir = ".."
 
 googleAnalytics = "" #put your google-analytics ID here
 
